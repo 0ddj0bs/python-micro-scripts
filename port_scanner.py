@@ -1,6 +1,6 @@
 import socket
 
-TARGET = "127.0.0.1"  
+TARGET = "127.0.0.1"   
 PORTS_TO_SCAN = [21, 22, 80, 135, 443, 445, 3389]
 
 
@@ -11,15 +11,17 @@ def scan_port(target, port):
     result = s.connect_ex((target, port))
 
     if result == 0:
-         print(f"[OPEN] Port {port}")
-
-    else:
          
-         print(f"[CLOSED] Port {port}")
+        try:
+            service_name = socket.getservbyport(port, "tcp")
+        except OSError:
+            service_name = "Unknown Service"
+
+        print(f"[OPEN]   Port {port:<5} | Service: {service_name}")
+    else:
+        print(f"[CLOSED] Port {port:<5}")
 
     s.close()
-    
-
 
 
 if __name__ == "__main__":
