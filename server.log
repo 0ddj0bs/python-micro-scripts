@@ -1,0 +1,5 @@
+2026-09-27 10:00:01 INFO System booted successfully
+2026-09-27 10:02:14 ERROR Database connection failed: Timeout
+2026-09-27 10:05:00 WARNING High memory usage detected (82%)
+2026-09-27 10:08:33 CRITICAL Core process crashed: Segmentation Fault
+2026-09-27 10:10:12 INFO Scheduled backup completed
