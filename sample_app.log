@@ -1,0 +1,9 @@
+2026-09-30 10:00:01 INFO System startup complete.
+2026-09-30 10:00:15 INFO User admin logged in successfully.
+2026-09-30 10:01:22 WARNING Disk usage exceeded 80% threshold.
+2026-09-30 10:02:05 ERROR Database connection failed on 192.168.1.50.
+2026-09-30 10:02:10 ERROR Re-try connection failed. Connection refused.
+2026-09-30 10:03:00 INFO Scheduled backup job started.
+2026-09-30 10:04:45 CRITICAL High memory utilization detected (94%).
+2026-09-30 10:05:12 WARNING High CPU usage detected on core 2.
+2026-09-30 10:06:01 INFO Backup job completed successfully.
