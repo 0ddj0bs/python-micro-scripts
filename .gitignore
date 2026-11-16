@@ -1,3 +1,9 @@
 baseline.json
 test_folder/
 mami.py
+
+# Local keylogger detector reports
+scan_reports/
+
+# Local keylogger detector reports
+scan_reports/
